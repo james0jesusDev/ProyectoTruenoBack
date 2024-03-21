@@ -10,6 +10,7 @@ using ProyectoCore10AbrilBack.Models;
 
 namespace Proyecto10AbrilBack.Controllers
 {
+    //[EnableCors]
     [Route("api/[controller]")]
     [ApiController]
     public class JugadoresController : ControllerBase
