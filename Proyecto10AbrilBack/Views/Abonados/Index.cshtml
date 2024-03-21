@@ -1,0 +1,59 @@
+﻿@model IEnumerable<ProyectoCore10AbrilBack.Models.Abonado>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Precio)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AbonadoNombre)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AbonadoApellido)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AbonadoTelefono)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AbonadoUser)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Precio)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AbonadoNombre)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AbonadoApellido)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AbonadoTelefono)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AbonadoUser)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.AbonadoId">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.AbonadoId">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.AbonadoId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
