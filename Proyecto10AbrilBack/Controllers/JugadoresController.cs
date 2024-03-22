@@ -17,17 +17,32 @@ namespace Proyecto10AbrilBack.Controllers
     public class JugadoresController : ControllerBase
     {
         private readonly ApplicationDbContext _context;
+        private readonly IHttpContextAccessor _httpContextAccessor;
 
-        public JugadoresController(ApplicationDbContext context)
+        public JugadoresController(ApplicationDbContext context, IHttpContextAccessor httpContextAccessor)
         {
             _context = context;
+            _httpContextAccessor = httpContextAccessor;
         }
 
         // GET: api/Jugadores
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Jugador>>> GetJugadores()
         {
-            return await _context.Jugadores.ToListAsync();
+            // Obtener la URL base del servidor
+            var baseUrl = $"{_httpContextAccessor.HttpContext.Request.Scheme}://{_httpContextAccessor.HttpContext.Request.Host}";
+
+            // Obtener la lista de jugadores desde la base de datos
+            var jugadores = await _context.Jugadores.ToListAsync();
+
+            // Iterar sobre cada jugador y construir la URL completa de la imagen
+            foreach (var jugador in jugadores)
+            {
+                jugador.ImageUrl = $"{baseUrl}/images/{jugador.ImageUrl}";
+            }
+
+            // Devolver la lista de jugadores con las URLs de imagen completas
+            return jugadores;
         }
 
         // GET: api/Jugadores/5
