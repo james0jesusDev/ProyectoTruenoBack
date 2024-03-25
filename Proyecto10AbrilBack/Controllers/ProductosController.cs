@@ -17,7 +17,7 @@ namespace Proyecto10AbrilBack.Controllers
     public class ProductosController : ControllerBase
     {
         private readonly ApplicationDbContext _context;
-        //Cambios leves
+        //Cambios levess
 
         public ProductosController(ApplicationDbContext context)
         {
