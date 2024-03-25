@@ -11,7 +11,7 @@ using ProyectoCore10AbrilBack.Models;
 
 namespace Proyecto10AbrilBack.Controllers
 {
-    [EnableCors("MyPolicy")]
+    [EnableCors("MyPolicy")] // añadido 
     [Route("api/[controller]")]
     [ApiController]
     public class ProductosController : ControllerBase
