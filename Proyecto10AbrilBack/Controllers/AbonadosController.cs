@@ -20,7 +20,7 @@ namespace Proyecto10AbrilBack.Controllers
 
         public AbonadosController(ApplicationDbContext context)
         {
-            _context = context;
+             _context = context;
         }
 
         // GET: api/Abonados
