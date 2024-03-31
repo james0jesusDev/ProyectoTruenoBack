@@ -101,12 +101,12 @@ namespace ProyectoCore10AbrilBack.Models
                 new Producto { ProductoId = 7, ProductoNombre = "Camiseta deportiva", ProductoPrecio = "25" },
                 new Producto { ProductoId = 8, ProductoNombre = "Zapatillas de fútbol", ProductoPrecio = "40" },
                 new Producto { ProductoId = 9, ProductoNombre = "Balón de baloncesto", ProductoPrecio = "30" },
-                new Producto { ProductoId = 10, ProductoNombre = "Pelota de tenis", ProductoPrecio = "10" },
-                new Producto { ProductoId = 11, ProductoNombre = "Raqueta de pádel", ProductoPrecio = "20" },
-                new Producto { ProductoId = 12, ProductoNombre = "Saco de boxeo", ProductoPrecio = "50" },
-                new Producto { ProductoId = 13, ProductoNombre = "Cinta para correr", ProductoPrecio = "200" },
-                new Producto { ProductoId = 14, ProductoNombre = "Bicicleta estática", ProductoPrecio = "300" },
-                new Producto { ProductoId = 15, ProductoNombre = "Balón medicinal", ProductoPrecio = "20" },
+                new Producto { ProductoId = 10, ProductoNombre = "Camiseta Titular ", ProductoPrecio = "50" },
+                new Producto { ProductoId = 11, ProductoNombre = "Camiseta Visitante", ProductoPrecio = "45" },
+                new Producto { ProductoId = 12, ProductoNombre = "Sudadera Retro", ProductoPrecio = "50" },
+                new Producto { ProductoId = 13, ProductoNombre = "Sudadera Visitante", ProductoPrecio = "47" },
+                new Producto { ProductoId = 14, ProductoNombre = "Camiseta entreno", ProductoPrecio = "35" },
+                new Producto { ProductoId = 15, ProductoNombre = "Indumentaria Calentamiento", ProductoPrecio = "55" },
                 new Producto { ProductoId = 16, ProductoNombre = "Cuerda para saltar", ProductoPrecio = "10" }
             };
             modelBuilder.Entity<Producto>().HasData(productos);
