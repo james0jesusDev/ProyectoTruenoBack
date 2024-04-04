@@ -17,18 +17,34 @@ namespace Proyecto10AbrilBack.Controllers
     public class ProductosController : ControllerBase
     {
         private readonly ApplicationDbContext _context;
+        private readonly IHttpContextAccessor _httpContextAccessor;
+
         //Cambios levess
 
-        public ProductosController(ApplicationDbContext context)
+        public ProductosController(ApplicationDbContext context, IHttpContextAccessor httpContextAccessor)
         {
             _context = context;
+            _httpContextAccessor = httpContextAccessor;
+
         }
 
         // GET: api/Productos
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Producto>>> GetProductos()
         {
-            return await _context.Productos.ToListAsync();
+            var baseUrl = $"{_httpContextAccessor.HttpContext.Request.Scheme}://{_httpContextAccessor.HttpContext.Request.Host}";
+
+            // Obtener la lista de productos desde la base de datos
+            var productos = await _context.Productos.ToListAsync();
+
+            // Iterar sobre cada jugador y construir la URL completa de la imagen
+            foreach (var producto in productos)
+            {
+                producto.ImageUrl = $"{baseUrl}/images/{producto.ImageUrl}";
+            }
+
+            // Devolver la lista de jugadores con las URLs de imagen completas
+            return productos;
         }
 
         // GET: api/Productos/5
