@@ -4,6 +4,7 @@
     {
         public int GastoId { get; set; }
         public string? GastoNombre { get; set; }
+        public int Cantidad { get; set; }
         public int AbonadoId { get; set; }
         public virtual Abonado? Abonado { get; set; }
         public virtual Producto? Producto { get; set; }

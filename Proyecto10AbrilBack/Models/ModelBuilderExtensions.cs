@@ -91,24 +91,24 @@ namespace ProyectoCore10AbrilBack.Models
 
             // Sembrar datos de Productos
             List<Producto> productos = new List<Producto>
-            {
-                new Producto { ProductoId = 1, ProductoNombre = "Balón de fútbol", ProductoPrecio = "20" },
-                new Producto { ProductoId = 2, ProductoNombre = "Conos de entrenamiento", ProductoPrecio = "10" },
-                new Producto { ProductoId = 3, ProductoNombre = "Red de fútbol", ProductoPrecio = "50" },
-                new Producto { ProductoId = 4, ProductoNombre = "Botella de agua", ProductoPrecio = "5" },
-                new Producto { ProductoId = 5, ProductoNombre = "Conjunto de pesas", ProductoPrecio = "30" },
-                new Producto { ProductoId = 6, ProductoNombre = "Guantes de portero", ProductoPrecio = "15" },
-                new Producto { ProductoId = 7, ProductoNombre = "Camiseta deportiva", ProductoPrecio = "25" },
-                new Producto { ProductoId = 8, ProductoNombre = "Zapatillas de fútbol", ProductoPrecio = "40" },
-                new Producto { ProductoId = 9, ProductoNombre = "Balón de baloncesto", ProductoPrecio = "30" },
-                new Producto { ProductoId = 10, ProductoNombre = "Camiseta Titular ", ProductoPrecio = "50" },
-                new Producto { ProductoId = 11, ProductoNombre = "Camiseta Visitante", ProductoPrecio = "45" },
-                new Producto { ProductoId = 12, ProductoNombre = "Sudadera Retro", ProductoPrecio = "50" },
-                new Producto { ProductoId = 13, ProductoNombre = "Sudadera Visitante", ProductoPrecio = "47" },
-                new Producto { ProductoId = 14, ProductoNombre = "Camiseta entreno", ProductoPrecio = "35" },
-                new Producto { ProductoId = 15, ProductoNombre = "Indumentaria Calentamiento", ProductoPrecio = "55" },
-                new Producto { ProductoId = 16, ProductoNombre = "Cuerda para saltar", ProductoPrecio = "10" }
-            };
+{
+    new Producto { ProductoId = 1, ProductoNombre = "Balón de fútbol", ProductoPrecio = "20", ImageUrl = "~/images/balon.jpg" },
+    new Producto { ProductoId = 2, ProductoNombre = "Conos de entrenamiento", ProductoPrecio = "10", ImageUrl = "~/images/conos.jpg" },
+    new Producto { ProductoId = 3, ProductoNombre = "Red de fútbol", ProductoPrecio = "50", ImageUrl = "~/images/red.jpg" },
+    new Producto { ProductoId = 4, ProductoNombre = "Botella de agua", ProductoPrecio = "5", ImageUrl = "~/images/botella.jpg" },
+    new Producto { ProductoId = 5, ProductoNombre = "Conjunto de pesas", ProductoPrecio = "30", ImageUrl = "~/images/Conjunto_de_pesas.jpg" },
+    new Producto { ProductoId = 6, ProductoNombre = "Guantes de portero", ProductoPrecio = "15", ImageUrl = "~/images/guantes.jpg" },
+    new Producto { ProductoId = 7, ProductoNombre = "Camiseta deportiva", ProductoPrecio = "25", ImageUrl = "~/images/Camisa5.PNG" },
+    new Producto { ProductoId = 8, ProductoNombre = "Zapatillas de fútbol", ProductoPrecio = "40", ImageUrl = "~/images/deportivas.jpg" },
+    new Producto { ProductoId = 9, ProductoNombre = "Balón de baloncesto", ProductoPrecio = "30", ImageUrl = "~/images/baloncesto.jpg" },
+    new Producto { ProductoId = 10, ProductoNombre = "Camiseta Titular", ProductoPrecio = "50", ImageUrl = "~/images/Camisa1.PNG" },
+    new Producto { ProductoId = 11, ProductoNombre = "Camiseta Visitante", ProductoPrecio = "45", ImageUrl = "~/images/Camisa3.PNG" },
+    new Producto { ProductoId = 12, ProductoNombre = "Sudadera Retro", ProductoPrecio = "50", ImageUrl = "~/images/retro.jpg" },
+    new Producto { ProductoId = 13, ProductoNombre = "Sudadera Visitante", ProductoPrecio = "47", ImageUrl = "~/images/invitado.jpg" },
+    new Producto { ProductoId = 14, ProductoNombre = "Camiseta entreno", ProductoPrecio = "35", ImageUrl = "~/images/indumentariaprepartidooscuravisi.jpg" },
+    new Producto { ProductoId = 15, ProductoNombre = "Indumentaria Calentamiento", ProductoPrecio = "55", ImageUrl = "~/images/calentar.jpg" },
+    new Producto { ProductoId = 16, ProductoNombre = "Cuerda para saltar", ProductoPrecio = "10", ImageUrl = "~/images/camisetaentrenonegra.jpg" }
+};
             modelBuilder.Entity<Producto>().HasData(productos);
         }
     }

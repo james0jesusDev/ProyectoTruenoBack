@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Proyecto10AbrilBack.Data;
 
@@ -11,9 +12,11 @@ using Proyecto10AbrilBack.Data;
 namespace Proyecto10AbrilBack.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20240405151619_M4")]
+    partial class M4
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -51,31 +54,31 @@ namespace Proyecto10AbrilBack.Data.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "84ae7271-5ade-4833-be33-a6a3e9655d17",
+                            Id = "d165a43b-b3c8-4afa-8b49-fb113e133858",
                             Name = "Administrador",
                             NormalizedName = "ADMINISTRADOR"
                         },
                         new
                         {
-                            Id = "04e8481d-67ca-4e6a-9349-cab0b4a31aaf",
+                            Id = "a001453f-d037-4b7e-bdd1-22c3de6b88a6",
                             Name = "Visitante",
                             NormalizedName = "VISITANTE"
                         },
                         new
                         {
-                            Id = "18c2bc3a-6235-4399-a978-0bf0d1203d3b",
+                            Id = "7e23d246-a676-4bba-bcab-2bfebe47fbad",
                             Name = "Abonado",
                             NormalizedName = "ABONADO"
                         },
                         new
                         {
-                            Id = "9a9463d9-7408-4b02-af6e-6c78972ad39d",
+                            Id = "c5117dad-2bd3-4c6f-aa7d-e6c49195c6a6",
                             Name = "Entrenador",
                             NormalizedName = "ENTRENADOR"
                         },
                         new
                         {
-                            Id = "9485a3a3-2b99-4ce3-afaf-c3ba2ebc5c0e",
+                            Id = "4e530d93-4915-4cea-8a29-887f0ca067f3",
                             Name = "Jugador",
                             NormalizedName = "JUGADOR"
                         });
@@ -824,112 +827,96 @@ namespace Proyecto10AbrilBack.Data.Migrations
                         new
                         {
                             ProductoId = 1,
-                            ImageUrl = "~/images/balon.jpg",
                             ProductoNombre = "Balón de fútbol",
                             ProductoPrecio = "20"
                         },
                         new
                         {
                             ProductoId = 2,
-                            ImageUrl = "~/images/conos.jpg",
                             ProductoNombre = "Conos de entrenamiento",
                             ProductoPrecio = "10"
                         },
                         new
                         {
                             ProductoId = 3,
-                            ImageUrl = "~/images/red.jpg",
                             ProductoNombre = "Red de fútbol",
                             ProductoPrecio = "50"
                         },
                         new
                         {
                             ProductoId = 4,
-                            ImageUrl = "~/images/botella.jpg",
                             ProductoNombre = "Botella de agua",
                             ProductoPrecio = "5"
                         },
                         new
                         {
                             ProductoId = 5,
-                            ImageUrl = "~/images/Conjunto_de_pesas.jpg",
                             ProductoNombre = "Conjunto de pesas",
                             ProductoPrecio = "30"
                         },
                         new
                         {
                             ProductoId = 6,
-                            ImageUrl = "~/images/guantes.jpg",
                             ProductoNombre = "Guantes de portero",
                             ProductoPrecio = "15"
                         },
                         new
                         {
                             ProductoId = 7,
-                            ImageUrl = "~/images/Camisa5.PNG",
                             ProductoNombre = "Camiseta deportiva",
                             ProductoPrecio = "25"
                         },
                         new
                         {
                             ProductoId = 8,
-                            ImageUrl = "~/images/deportivas.jpg",
                             ProductoNombre = "Zapatillas de fútbol",
                             ProductoPrecio = "40"
                         },
                         new
                         {
                             ProductoId = 9,
-                            ImageUrl = "~/images/baloncesto.jpg",
                             ProductoNombre = "Balón de baloncesto",
                             ProductoPrecio = "30"
                         },
                         new
                         {
                             ProductoId = 10,
-                            ImageUrl = "~/images/Camisa1.PNG",
-                            ProductoNombre = "Camiseta Titular",
+                            ProductoNombre = "Camiseta Titular ",
                             ProductoPrecio = "50"
                         },
                         new
                         {
                             ProductoId = 11,
-                            ImageUrl = "~/images/Camisa3.PNG",
                             ProductoNombre = "Camiseta Visitante",
                             ProductoPrecio = "45"
                         },
                         new
                         {
                             ProductoId = 12,
-                            ImageUrl = "~/images/retro.jpg",
                             ProductoNombre = "Sudadera Retro",
                             ProductoPrecio = "50"
                         },
                         new
                         {
                             ProductoId = 13,
-                            ImageUrl = "~/images/invitado.jpg",
                             ProductoNombre = "Sudadera Visitante",
                             ProductoPrecio = "47"
                         },
                         new
                         {
                             ProductoId = 14,
-                            ImageUrl = "~/images/indumentariaprepartidooscuravisi.jpg",
                             ProductoNombre = "Camiseta entreno",
                             ProductoPrecio = "35"
                         },
                         new
                         {
                             ProductoId = 15,
-                            ImageUrl = "~/images/calentar.jpg",
                             ProductoNombre = "Indumentaria Calentamiento",
                             ProductoPrecio = "55"
                         },
                         new
                         {
                             ProductoId = 16,
-                            ImageUrl = "~/images/camisetaentrenonegra.jpg",
                             ProductoNombre = "Cuerda para saltar",
                             ProductoPrecio = "10"
                         });
