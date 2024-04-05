@@ -34,10 +34,23 @@ namespace ProyectoCore10AbrilBack.Models
 
             // Sembrar datos de Gastos
             List<Gasto> gastos = new List<Gasto>
-            {
-                new Gasto { GastoId = 1, GastoNombre = "Material deportivo", AbonadoId = 1 },
-                new Gasto { GastoId = 2, GastoNombre = "Pago de árbitros", AbonadoId = 2 }
-            };
+        {
+            new Gasto { GastoId = 1, GastoNombre = "📉Material deportivo", AbonadoId = 1, Cantidad=2000 },
+            new Gasto { GastoId = 2, GastoNombre = "📉Pago de árbitros", AbonadoId = 2, Cantidad=20000 },
+            new Gasto { GastoId = 3, GastoNombre = "📉Alquiler del campo de entrenamiento", AbonadoId = 3, Cantidad = 500 },
+new Gasto { GastoId = 4, GastoNombre = "📉Viaje para torneo fuera de la ciudad", AbonadoId = 4, Cantidad = 1500 },
+new Gasto { GastoId = 5, GastoNombre = "📉Sueldo de Jugadores", AbonadoId = 4, Cantidad = 1500000 },
+new Gasto { GastoId = 6, GastoNombre = "📉Sueldo del Cuerpo Tecnico", AbonadoId = 4, Cantidad = 250000 },
+new Gasto { GastoId = 7, GastoNombre = "📉Sueldo del Entrenador", AbonadoId = 4, Cantidad = 15000 },
+new Gasto { GastoId = 8, GastoNombre = "📉Viaje para torneo fuera de la ciudad", AbonadoId = 4, Cantidad = 1500 },
+new Gasto { GastoId = 9, GastoNombre = "📈Venta de entradas en partidos locales", AbonadoId = 6, Cantidad = 3000 },
+new Gasto { GastoId = 10, GastoNombre = "📉Mantenimiento de equipamiento", AbonadoId = 1, Cantidad = 1000 },
+new Gasto { GastoId = 11, GastoNombre = "📈Donación de un miembro del equipo", AbonadoId = 7, Cantidad = 1000 },
+new Gasto { GastoId = 12, GastoNombre = "📈Subvención del gobierno local", AbonadoId = 8, Cantidad = 20000 },
+new Gasto { GastoId = 13, GastoNombre = "📈Venta de productos de merchandising", AbonadoId = 5, Cantidad = 200 },
+new Gasto { GastoId = 14, GastoNombre = "📈Entradas", AbonadoId = 5, Cantidad = 20000 },
+new Gasto { GastoId = 15, GastoNombre = "📈Beneficios por campeonatos", AbonadoId = 5, Cantidad = 2000000 }
+        };
             modelBuilder.Entity<Gasto>().HasData(gastos);
 
             // Sembrar datos de Jugadores
