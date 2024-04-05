@@ -9,6 +9,8 @@
         public string? JugadorUser { get; set; }
         public string? ImageUrl { get; set; }
         public Lesionado Lesionado { get; set; }
+
+        public virtual Categoria? Categoria { get; set; }
     }
     public enum Lesionado
     {

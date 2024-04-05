@@ -5,9 +5,18 @@
         public int GastoId { get; set; }
         public string? GastoNombre { get; set; }
         public int Cantidad { get; set; }
-        public int AbonadoId { get; set; }
-        public virtual Abonado? Abonado { get; set; }
-        public virtual Producto? Producto { get; set; }
-        public virtual CuerpoTecnico? CuerpoTecnico { get; set; }
+
+        public Dinero? Dinero { get; set; }
+
+       
+
+
+    }
+
+    public enum Dinero
+    {
+        Beneficio,
+        Gasto
+
     }
 }
