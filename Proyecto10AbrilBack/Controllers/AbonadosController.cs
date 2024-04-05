@@ -14,6 +14,7 @@ namespace Proyecto10AbrilBack.Controllers
     [EnableCors("MyPolicy")]
     [Route("api/[controller]")]
     [ApiController]
+
     public class AbonadosController : ControllerBase
     {
         private readonly ApplicationDbContext _context;
