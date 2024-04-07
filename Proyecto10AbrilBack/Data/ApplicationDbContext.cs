@@ -5,6 +5,7 @@ using ProyectoCore10AbrilBack.Models;
 namespace Proyecto10AbrilBack.Data
 {
     public class ApplicationDbContext : IdentityDbContext
+        //
     {
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
             : base(options)
