@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -10,6 +11,7 @@ using Proyecto10AbrilBack.Models;
 
 namespace Proyecto10AbrilBack.Controllers
 {
+    [EnableCors("MyPolicy")]
     [Route("api/[controller]")]
     [ApiController]
     public class PartidoesController : ControllerBase
@@ -25,7 +27,16 @@ namespace Proyecto10AbrilBack.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Partido>>> GetPartido()
         {
-            return await _context.Partido.ToListAsync();
+            var partidos = await _context.Partido.ToListAsync();
+
+            // Modificar las rutas de las imágenes para que sean completas
+            foreach (var partido in partidos)
+            {
+                partido.LogoLocal = Url.Content(partido.LogoLocal);
+                partido.LogoVisitante = Url.Content(partido.LogoVisitante);
+            }
+
+            return partidos;
         }
 
         // GET: api/Partidoes/5

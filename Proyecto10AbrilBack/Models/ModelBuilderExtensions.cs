@@ -105,20 +105,16 @@ new Gasto { GastoId = 15, GastoNombre = "📈Beneficios por campeonatos", Cantid
 
 
 
-            // Sembrar datos de partidos
             List<Partido> partidos = new List<Partido>
-            {
-                new Partido { ID = 1, Fecha = "2024-04-10", EquipoLocal = "Cadiz", EquipoVisitante = "Trueno FC", Hora = "21:00", Estadio = "Estadio Nuevo Mirandilla" },
-                new Partido { ID = 2, Fecha = "2024-04-16", EquipoLocal = "Trueno FC", EquipoVisitante = "Real Madrid", Hora = "21:00", Estadio = "Estadio Camp Nou" },
-
-                new Partido { ID = 3, Fecha = "2024-04-21", EquipoLocal = "Trueno FC", EquipoVisitante = "Levante", Hora = "21:00", Estadio = "Estadio Camp Nou" },
-
-                new Partido { ID = 4, Fecha = "2024-05-05", EquipoLocal = "Villareal", EquipoVisitante = "Trueno FC", Hora = "21:00", Estadio = "Estadio Cerámica" },
-                new Partido { ID = 5, Fecha = "2024-05-12", EquipoLocal = "Trueno FC", EquipoVisitante = "Getafe", Hora = "21:00", Estadio = "Estadio Camp Nou" },
-                new Partido { ID = 6, Fecha = "2024-05-16", EquipoLocal = "Eibar", EquipoVisitante = "Trueno FC", Hora = "21:00", Estadio = "Ipurua" },
-
-                // Agrega más partidos según sea necesario
-            };
+{
+    new Partido { ID = 1, Fecha = "2024-04-10", EquipoLocal = "Cadiz", EquipoVisitante = "Trueno FC", Hora = "21:00", Estadio = "Estadio Nuevo Mirandilla",LogoLocal = "~/images/cadiz.jfif", LogoVisitante = "~/images/_bfac69ec-7f32-4d5b-8390-1afcd08c3829 (2).jpg" },
+    new Partido { ID = 2, Fecha = "2024-04-16", EquipoLocal = "Trueno FC", EquipoVisitante = "Real Madrid", Hora = "21:00", Estadio = "Estadio Camp Nou", LogoLocal = "~/images/_bfac69ec-7f32-4d5b-8390-1afcd08c3829 (2).jpg", LogoVisitante = "~/images/realmadri.jfif" },
+    new Partido { ID = 3, Fecha = "2024-04-21", EquipoLocal = "Trueno FC", EquipoVisitante = "Levante", Hora = "21:00", Estadio = "Estadio Camp Nou", LogoLocal = "~/images/_bfac69ec-7f32-4d5b-8390-1afcd08c3829 (2).jpg", LogoVisitante = "~/images/Levante.jfif" },
+    new Partido { ID = 4, Fecha = "2024-05-05", EquipoLocal = "Villareal", EquipoVisitante = "Trueno FC", Hora = "21:00", Estadio = "Estadio Cerámica", LogoLocal = "~/images/villareal.jfif", LogoVisitante = "~/images/_bfac69ec-7f32-4d5b-8390-1afcd08c3829 (2).jpg" },
+    new Partido { ID = 5, Fecha = "2024-05-12", EquipoLocal = "Trueno FC", EquipoVisitante = "Getafe", Hora = "21:00", Estadio = "Estadio Camp Nou", LogoLocal = "~/images/_bfac69ec-7f32-4d5b-8390-1afcd08c3829 (2).jpg", LogoVisitante = "~/images/getafe.jfif" },
+    new Partido { ID = 6, Fecha = "2024-05-16", EquipoLocal = "Eibar", EquipoVisitante = "Trueno FC", Hora = "21:00", Estadio = "Ipurua", LogoLocal = "~/images/eibar.jfif", LogoVisitante = "~/images/_bfac69ec-7f32-4d5b-8390-1afcd08c3829 (2).jpg" },
+    // Agrega más partidos según sea necesario
+};
 
             modelBuilder.Entity<Partido>().HasData(partidos);
 
