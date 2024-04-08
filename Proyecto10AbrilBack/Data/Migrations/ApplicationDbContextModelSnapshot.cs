@@ -51,31 +51,31 @@ namespace Proyecto10AbrilBack.Data.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "0087f49b-cea8-4fc9-a1f0-1825d51988f2",
+                            Id = "93065bef-817c-40e6-af41-8ec5d80a9127",
                             Name = "Administrador",
                             NormalizedName = "ADMINISTRADOR"
                         },
                         new
                         {
-                            Id = "26bf5ba1-a74b-4b2c-8a10-b0e1749cd64f",
+                            Id = "9ef4bfe1-a080-484d-aff5-7c11c7c2999d",
                             Name = "Visitante",
                             NormalizedName = "VISITANTE"
                         },
                         new
                         {
-                            Id = "1417357c-87ca-4f87-a87d-88c5da72dfec",
+                            Id = "5938492a-727a-4669-ab25-4fe93790e97e",
                             Name = "Abonado",
                             NormalizedName = "ABONADO"
                         },
                         new
                         {
-                            Id = "fa1fa045-1d7d-4ce3-b1cc-4931049ade1b",
+                            Id = "1395922c-afea-46c1-9a2b-908f433deccf",
                             Name = "Entrenador",
                             NormalizedName = "ENTRENADOR"
                         },
                         new
                         {
-                            Id = "b9f0178b-d9c2-4b76-ad97-a47158a84774",
+                            Id = "f342e983-2ea8-43cf-8d4e-27995a99cdfe",
                             Name = "Jugador",
                             NormalizedName = "JUGADOR"
                         });
@@ -298,8 +298,8 @@ namespace Proyecto10AbrilBack.Data.Migrations
                             Estadio = "Estadio Nuevo Mirandilla",
                             Fecha = "2024-04-10",
                             Hora = "21:00",
-                            LogoLocal = "cadiz.jfif",
-                            LogoVisitante = "_bfac69ec-7f32-4d5b-8390-1afcd08c3829 (2).jpg"
+                            LogoLocal = "~/images/cadiz.jfif",
+                            LogoVisitante = "~/images/_bfac69ec-7f32-4d5b-8390-1afcd08c3829.jpg"
                         },
                         new
                         {
@@ -309,8 +309,8 @@ namespace Proyecto10AbrilBack.Data.Migrations
                             Estadio = "Estadio Camp Nou",
                             Fecha = "2024-04-16",
                             Hora = "21:00",
-                            LogoLocal = "_bfac69ec-7f32-4d5b-8390-1afcd08c3829 (2).jpg",
-                            LogoVisitante = "realmadri.jfif"
+                            LogoLocal = "~/images/_bfac69ec-7f32-4d5b-8390-1afcd08c3829.jpg",
+                            LogoVisitante = "~/images/realmadri.jfif"
                         },
                         new
                         {
@@ -320,8 +320,8 @@ namespace Proyecto10AbrilBack.Data.Migrations
                             Estadio = "Estadio Camp Nou",
                             Fecha = "2024-04-21",
                             Hora = "21:00",
-                            LogoLocal = "_bfac69ec-7f32-4d5b-8390-1afcd08c3829 (2).jpg",
-                            LogoVisitante = "Levante.jfif"
+                            LogoLocal = "~/images/_bfac69ec-7f32-4d5b-8390-1afcd08c3829.jpg",
+                            LogoVisitante = "~/images/Levante.jfif"
                         },
                         new
                         {
@@ -331,8 +331,8 @@ namespace Proyecto10AbrilBack.Data.Migrations
                             Estadio = "Estadio Cerámica",
                             Fecha = "2024-05-05",
                             Hora = "21:00",
-                            LogoLocal = "villareal.jfif",
-                            LogoVisitante = "_bfac69ec-7f32-4d5b-8390-1afcd08c3829 (2).jpg"
+                            LogoLocal = "~/images/villareal.jfif",
+                            LogoVisitante = "~/images/_bfac69ec-7f32-4d5b-8390-1afcd08c3829.jpg"
                         },
                         new
                         {
@@ -342,8 +342,8 @@ namespace Proyecto10AbrilBack.Data.Migrations
                             Estadio = "Estadio Camp Nou",
                             Fecha = "2024-05-12",
                             Hora = "21:00",
-                            LogoLocal = "_bfac69ec-7f32-4d5b-8390-1afcd08c3829 (2).jpg",
-                            LogoVisitante = "getafe.jfif"
+                            LogoLocal = "~/images/_bfac69ec-7f32-4d5b-8390-1afcd08c3829.jpg",
+                            LogoVisitante = "~/images/getafe.jfif"
                         },
                         new
                         {
@@ -353,8 +353,8 @@ namespace Proyecto10AbrilBack.Data.Migrations
                             Estadio = "Ipurua",
                             Fecha = "2024-05-16",
                             Hora = "21:00",
-                            LogoLocal = "eibar.jfif",
-                            LogoVisitante = "_bfac69ec-7f32-4d5b-8390-1afcd08c3829 (2).jpg"
+                            LogoLocal = "~/images/eibar.jfif",
+                            LogoVisitante = "~/images/_bfac69ec-7f32-4d5b-8390-1afcd08c3829.jpg"
                         });
                 });
 
