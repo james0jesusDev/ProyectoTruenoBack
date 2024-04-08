@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using Proyecto10AbrilBack.Models;
 using System.Data;
 using static System.Net.Mime.MediaTypeNames;
 
@@ -101,6 +102,25 @@ new Gasto { GastoId = 15, GastoNombre = "📈Beneficios por campeonatos", Cantid
     new CuerpoTecnico { CuerpoTecnicoId = 7, CuerpoTecnicoSueldo = 3100, CuerpoTecnicoNombre = "David", CuerpoTecnicoApellido = "Pérez", JugadorId = 7 }
             };
             modelBuilder.Entity<CuerpoTecnico>().HasData(cuerpoTecnico);
+
+
+
+            // Sembrar datos de partidos
+            List<Partido> partidos = new List<Partido>
+            {
+                new Partido { ID = 1, Fecha = "2024-04-10", EquipoLocal = "Cadiz", EquipoVisitante = "Trueno FC", Hora = "21:00", Estadio = "Estadio Nuevo Mirandilla" },
+                new Partido { ID = 2, Fecha = "2024-04-16", EquipoLocal = "Trueno FC", EquipoVisitante = "Real Madrid", Hora = "21:00", Estadio = "Estadio Camp Nou" },
+
+                new Partido { ID = 3, Fecha = "2024-04-21", EquipoLocal = "Trueno FC", EquipoVisitante = "Levante", Hora = "21:00", Estadio = "Estadio Camp Nou" },
+
+                new Partido { ID = 4, Fecha = "2024-05-05", EquipoLocal = "Villareal", EquipoVisitante = "Trueno FC", Hora = "21:00", Estadio = "Estadio Cerámica" },
+                new Partido { ID = 5, Fecha = "2024-05-12", EquipoLocal = "Trueno FC", EquipoVisitante = "Getafe", Hora = "21:00", Estadio = "Estadio Camp Nou" },
+                new Partido { ID = 6, Fecha = "2024-05-16", EquipoLocal = "Eibar", EquipoVisitante = "Trueno FC", Hora = "21:00", Estadio = "Ipurua" },
+
+                // Agrega más partidos según sea necesario
+            };
+
+            modelBuilder.Entity<Partido>().HasData(partidos);
 
             // Sembrar datos de Productos
             List<Producto> productos = new List<Producto>

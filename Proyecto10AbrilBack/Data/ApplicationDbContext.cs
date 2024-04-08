@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using Proyecto10AbrilBack.Models;
 using ProyectoCore10AbrilBack.Models;
 
 namespace Proyecto10AbrilBack.Data
@@ -17,6 +18,8 @@ namespace Proyecto10AbrilBack.Data
         public DbSet<Gasto> Gastos { get; set; }
         public DbSet<Jugador> Jugadores { get; set; }
         public DbSet<Producto> Productos { get; set; }
+
+        public DbSet <Partido> Partido { get; set; }
 
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
